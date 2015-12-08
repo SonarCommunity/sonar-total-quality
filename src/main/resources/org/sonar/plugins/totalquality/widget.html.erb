@@ -2,13 +2,13 @@
 <div class="yui-g">
   <div class="yui-u first">
     <div class="dashbox">
-      <p class="title">Total Quality</p>
+      <h3>Total Quality</h3>
       <p><span class="big"><%= format_measure('total-quality', :suffix => '', :url => url_for_drilldown('total-quality'), :default => '0')%><%= tendency_icon('total-quality') %></span></p> 
     </div>
   </div>
   <div class="yui-u">
     <div class="dashbox">
-        <p class="title">&nbsp;</p>
+        <h3">&nbsp;</h3>
         <p><span><%= format_measure('total-quality-architecture', :suffix => ' Architecture', :url => url_for_drilldown('total-quality-architecture'), :default => '$ 0')%><%= tendency_icon('total-quality-architecture') %></span></p>
         <p><span><%= format_measure('total-quality-design', :suffix => ' Design', :url => url_for_drilldown('total-quality-design'), :default => '$ 0')%><%= tendency_icon('total-quality-design') %></span></p>
         <% if measure('total-quality-test-with-it') %>
